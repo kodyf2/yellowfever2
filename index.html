@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow Fever Vaccine Certificate</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Config -->
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea556',
+                        'primary-dark': '#0b8445',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="/files/public_html/favicon.png" type="image/png">
+    <link rel="icon" href="/files/favicon.png" type="image/png">
+    <link rel="icon" href="favicon.png" type="image/png"> 
+
+
+    
+</head>
+<body class="bg-gray-50">
+    <?php
+    $telegramUrl = "https://t.me/Kdinc99";
+    ?>
+
+    <div class="min-h-screen bg-background flex flex-col items-center justify-center px-4 py-16">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <!-- Main Content with Animation -->
+            <div class="animate__animated animate__fadeInUp">
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary/80 text-transparent bg-clip-text">
+                    Get a Valid Yellow Fever Vaccine Certificate in just 5 minutes
+                </h1>
+
+                <p class="mt-6 text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">
+                    Valid for Worldwide travel and school use worldwide: Only $59
+                </p>
+                
+            
+                
+                
+            </div>
+
+            <!-- Button Section with Animation -->
+            <div class="animate__animated animate__fadeIn animate__delay-1s pt-8">
+                <a href="<?php echo htmlspecialchars($telegramUrl); ?>" 
+                   target="_blank"
+                   class="inline-flex items-center gap-2 px-5 py-4 text-lg rounded-full bg-primary hover:bg-primary-dark text-white transition-all duration-300 hover:shadow-xl group">
+                    Chat with our Telegram to order your Vaccine Certificate
+                    <!-- Telegram Icon -->
+                    <svg class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.43 7.12l-1.68 7.89c-.13.58-.48.73-.98.45l-2.7-1.99-1.3 1.25c-.14.14-.27.27-.55.27l.2-2.79 5.07-4.58c.22-.2-.05-.31-.34-.12l-6.27 3.95-2.7-.84c-.58-.18-.59-.58.12-.87l10.53-4.06c.48-.18.91.11.7 1.39z"/>
+                    </svg>
+                    <!-- Arrow Icon -->
+                    <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                </a>
+
+                <p class="mt-4 text-sm text-gray-600">
+                    Our Vaccine Certificates are battle tested and work worldwide
+                    - <br> contact : yellowfevercert@gmail.com - <br> 
+
+                    <br> 
+                <a href="https://wa.me/+13107217580" target="_blank" title="Chat on WhatsApp">
+  <img src="/whatsapp-round-icon.png" alt="WhatsApp" width="62" height="62" style="display: block; margin: 0 auto;" />
+  
+  
+  
+  
+</a>
+</a>
+
+                    <br> 
+                    Get a Valid Yellow Fever Vaccine Certificate in just 5 minutes.
+                    Good for travel and schools, universities, etc. 
+                    Perfect for travelling to Brazil, many African countries that require a Yellow Fever Vaccine Certificate.
+                    Guaranteed entry or money back. Takes just a few minutes to complete.  Order now. 
+                    
+                    
+                </p>
+            </div>
+        </div>
+
+        <!-- Background Gradient -->
+        <div class="absolute bottom-0 w-full h-1/2 bg-gradient-to-t from-primary/5 to-transparent -z-10"></div>
+    </div>
+
+    <!-- Simple Animation Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effect to button
+            const button = document.querySelector('a[href*="telegram"]');
+            button.addEventListener('mouseover', function() {
+                this.classList.add('shadow-xl');
+            });
+            button.addEventListener('mouseout', function() {
+                this.classList.remove('shadow-xl');
+            });
+        });
+    </script>
+</body>
+</html>
