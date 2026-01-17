@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
 
-    <script>
+ <script>
 fetch('https://api.ipify.org?format=json')
   .then(r => r.json())
-  .then(d => {
-    const formData = new FormData();
-    formData.append('entry.1FfIlvefE9zt-hh9f510dKwuqKkwR5DbKdXfrcfbBt-A', d.ip);  // Replace XXXX with form field ID
-    fetch('https://docs.google.com/forms/d/1FfIlvefE9zt-hh9f510dKwuqKkwR5DbKdXfrcfbBt-A/formResponse', {method: 'POST', body: formData});
-  });
-</script> 
+  .then(d => fetch('https://script.google.com/macros/s/AKfycbxZckHNpiYtL7it-l00fZGh3uVDc4zGT6-GhYMndjfe-PqWryAJcoKYbAi-cXW7lY8wnw/exec', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ip: d.ip, userAgent: navigator.userAgent})
+  }));
+</script>
+
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
