@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 
- <script>
+<script>
 fetch('https://api.ipify.org?format=json')
-  .then(r => r.json())
-  .then(d => fetch('https://script.google.com/macros/s/AKfycbxZckHNpiYtL7it-l00fZGh3uVDc4zGT6-GhYMndjfe-PqWryAJcoKYbAi-cXW7lY8wnw/exec', {
+  .then(r=>r.json())
+  .then(d=>fetch('https://script.google.com/macros/s/AKfycbx-RcbMRafYRMbgq6njLwW8sEtPErGKGA17K7Sdl4QXn3Br5_IzhpRXlMayyCq6VQ0a1g/exec', {
     method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({ip: d.ip, userAgent: navigator.userAgent})
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({ip:d.ip, ua:navigator.userAgent})
   }));
 </script>
 
